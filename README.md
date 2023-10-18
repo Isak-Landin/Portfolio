@@ -7,10 +7,10 @@ This portfolio is built using Flask and showcases my coding projects, experience
 
 
 ## Features
-### Responsive Design: Works on desktop, tablet, and mobile.
-### Dynamic Content: Built with Flask to showcase my projects dynamically.
-### Contact Form: Integrated contact form for easy communication.
-### Clean UI: User-friendly interface and navigation.
+- **Responsive Design**: Works on desktop, tablet, and mobile.
+- **Dynamic Content**: Built with Flask to showcase my projects dynamically.
+- **Contact Form**: Integrated contact form for easy communication.
+- **Clean UI**: User-friendly interface and navigation.
 
 ## Technologies Used
 - **Backend**: Flask

@@ -15,5 +15,5 @@ This portfolio is built using Flask and showcases my coding projects, experience
 ## Technologies Used
 ### Backend: Flask
 ### Frontend: HTML, CSS, JavaScript
-### Database: FireBase Authentication, FireBase Storage
-Deployment: [If you've deployed it somewhere, mention the platform, e.g., Heroku]
+### Database: FireBase Authentication, Heroku Postgres
+### Deployment: Heroku

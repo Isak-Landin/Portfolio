@@ -18,4 +18,4 @@ This portfolio is built using Flask and showcases my coding projects, experience
 
 ## Projects Featured
 - **JWT Authentication Backend**
-- **CH340T Controller**
+- **[CH340T Controller](https://github.com/Isak-Landin/ch340x_controller_v1.0)**

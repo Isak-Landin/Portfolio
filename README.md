@@ -3,8 +3,6 @@
 Welcome to the GitHub repository of my personal portfolio.
 This portfolio is built using Flask and showcases my coding projects, experiences, and skills.
 
-Thanks to @github/markoradenkovic for the lengthy discussions over the years, allowing this to become a reality.
-
 
 ## Features
 - **Responsive Design**: Works on desktop, tablet, and mobile.

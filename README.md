@@ -15,3 +15,7 @@ This portfolio is built using Flask and showcases my coding projects, experience
 - **Frontend**: HTML, CSS, JavaScript
 - **Database**: FireBase Authentication, Heroku Postgres
 - **Deployment**: Heroku
+
+## Projects Featured
+- **JWT Authentication Backend**
+- **CH340T Controller**

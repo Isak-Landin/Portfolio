@@ -1,6 +1,15 @@
 from flask import Flask
-from application.projects.projects import projects_blueprint
+from projects.projects import projects_blueprint
 
-app = Flask(__name__)
+import os
+
+app = Flask(__name__, template_folder='templates')
 app.register_blueprint(projects_blueprint, url_prefix='/projects')
 
+app.static_folder = 'static'
+
+
+@app.route('/debug')
+def debug():
+    current_directory = os.getcwd()
+    return f"Current Working Directory: {current_directory}"

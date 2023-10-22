@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, abort
-from databaseInteraction import get_project_by_id
+from databaseInteraction.project_db_interaction import get_project_by_id
 
 
 projects_blueprint = Blueprint('projects', __name__, template_folder='templates')

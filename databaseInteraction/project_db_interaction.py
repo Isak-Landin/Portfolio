@@ -5,4 +5,4 @@ def get_project_by_id(project_id):
     #  It will have to be a kwargs. The logic for it is as follows:
     #  The operation responsible for placing the variables will be using keywords....
     #  to see if the expected variable does have a value
-    return
+    return project_id

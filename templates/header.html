@@ -9,8 +9,8 @@
 			<nav>
 				<a href="{{ url_for('home.home') }}" class="{% if active_page == 'home' %}selected{% endif %}">Home</a>
 				<a href="{{ url_for('projects.projects') }}" class="{% if active_page == 'projects' or active_page == 'project' %}selected{% endif %}">Projects</a>
-				<a href="#">About</a>
-				<a href="#">Contact</a>
+				<a href="{{ url_for('about.about') }}" class="{% if active_page == 'about' %}selected{% endif %}">About</a>
+				<a href="{{ url_for('contact.contact_main') }}" class="{% if active_page == 'contact' %}selected{% endif %}">Contact</a>
 			</nav>
 
 			<a href="#" class="logout-button">Logout</a>

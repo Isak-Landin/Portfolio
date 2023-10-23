@@ -5,5 +5,5 @@ contacts_blueprint = Blueprint('contact', __name__, template_folder='templates',
 
 
 @contacts_blueprint.route('/')
-def contacts_main():
+def contact_main():
     return render_template('contact.html', active_page='contact')

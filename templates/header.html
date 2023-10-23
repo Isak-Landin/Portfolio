@@ -7,10 +7,10 @@
 			<h1><a href="#">Isak<span>Landin</span></a></h1>
 
 			<nav>
-				<a href="#">Home</a>
-				<a href="#" class="selected">Projects</a>
-				<a href="#">Reports</a>
-				<a href="#">Roles</a>
+				<a href="{{ url_for('home.home') }}" class="{% if active_page == 'home' %}selected{% endif %}">Home</a>
+				<a href="{{ url_for('projects.projects') }}" class="{% if active_page == 'projects' or active_page == 'project' %}selected{% endif %}">Projects</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
 			</nav>
 
 			<a href="#" class="logout-button">Logout</a>

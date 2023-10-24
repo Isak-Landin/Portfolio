@@ -1,18 +1,28 @@
 <div class="person">
-  <h2>John Doe</h2>
-  <img src="{{ url_for('static', filename='img/person.jpg') }}" alt="Person's Image">
-  <p>Description goes here. Description goes here.</p>
+
+  <div id="contact-image-name">
+    <div id="contact">
+      <ul>
+        <li>Phone: 123-456-7890</li>
+        <li>Email: john@example.com</li>
+        <li>LinkedIn: linkedin.com/in/johndoe</li>
+        <li>GitHub: github.com/johndoe</li>
+      </ul>
+    </div>
+
+
+    <div id="image-and-name">
+      <div id="image-stack">
+        <img src="{{ url_for('contact.static', filename='person.jpg') }}" alt="Person's Image">
+      </div>
+      <div id="name-stack">
+        <h2 id="name">John Doe</h2>
+      </div>
+    </div>
+  </div>
+  <p id="description">Description goes here. Description goes here.</p>
 
   <div class="skills">
     <!-- Skills images go here -->
-  </div>
-
-  <div class="contact">
-    <ul>
-      <li>Phone: 123-456-7890</li>
-      <li>Email: john@example.com</li>
-      <li>LinkedIn: linkedin.com/in/johndoe</li>
-      <li>GitHub: github.com/johndoe</li>
-    </ul>
   </div>
 </div>

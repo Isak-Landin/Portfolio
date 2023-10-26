@@ -1,28 +1,50 @@
 <div class="person">
 
-  <div id="contact-image-name">
-    <div id="contact">
-      <ul>
-        <li>Phone: 123-456-7890</li>
-        <li>Email: john@example.com</li>
-        <li>LinkedIn: linkedin.com/in/johndoe</li>
-        <li>GitHub: github.com/johndoe</li>
-      </ul>
-    </div>
+  <div class="name-stack">
+        <h2 class="name">Isak Landin</h2>
+  </div>
 
-
-    <div id="image-and-name">
-      <div id="image-stack">
+  <div class="contact-image-name">
+    <div class="image-and-name">
+      <div class="image-stack">
         <img src="{{ url_for('contact.static', filename='person.jpg') }}" alt="Person's Image">
       </div>
-      <div id="name-stack">
-        <h2 id="name">John Doe</h2>
+    </div>
+
+    <div class="contact">
+      <div class="list-container">
+
+        <ul>
+          <li class="contact-li-header">
+            <h3 class="contact-li-h3">Phone:</h3>
+            <p class="contact-li-p">+46735376149</p>
+          </li>
+          <li class="contact-li-header">
+            <h3 class="contact-li-h3">Email:</h3>
+            <p class="contact-li-p">utbisalan@gmail.com</p>
+          </li>
+        </ul>
+
+        <div class="contact-image-header">
+          <a target="_blank" href="https://www.linkedin.com/in/isak-landin-375625153/">
+            <img class="contact-li-linkedin" src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Link">
+          </a>
+          <a target="_blank" href="https://github.com/Isak-Landin">
+            <img class="contact-li-github" src="{{ url_for('static', filename='github.png') }}" alt="Github Link">
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
-  <p id="description">Description goes here. Description goes here.</p>
+
+
 
   <div class="skills">
-    <!-- Skills images go here -->
+    {% include "skill.html" %}
+    {% include "skill.html" %}
+    {% include "skill.html" %}
   </div>
+
+  <p class="description">Description goes here. Description goes here.</p>
 </div>

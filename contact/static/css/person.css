@@ -121,6 +121,10 @@ img,
   border-radius: 50%;
 }
 
+.description-div {
+  display: none;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

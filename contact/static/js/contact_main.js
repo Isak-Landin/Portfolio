@@ -1,12 +1,15 @@
-const showMoreButton = document.getElementById('.show-more-button');
-const descriptionDiv = document.querySelector('.description-div');
+function showMore(btn) {
+  const personComponent = btn.closest('.person');
+  const skillsContainer = personComponent.querySelector('.skills');
+  const moreText = personComponent.querySelector('.more');
 
-showMoreButton.addEventListener('click', function () {
-  if (descriptionDiv.style.display === 'none') {
-    descriptionDiv.style.display = 'block';
-    showMoreButton.textContent = 'Show Less';
+  if (skillsContainer.style.display === "block") {
+    btn.innerHTML = "Read more";
+    skillsContainer.style.display = "none";
+    moreText.style.display = "none";
   } else {
-    descriptionDiv.style.display = 'none';
-    showMoreButton.textContent = 'Show More';
+    btn.innerHTML = "Read less";
+    skillsContainer.style.display = "block";
+    moreText.style.display = "inline";
   }
-});
+}

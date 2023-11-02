@@ -121,8 +121,51 @@ img,
   border-radius: 50%;
 }
 
-.description-div {
+.more {
   display: none;
+}
+
+.description-container {
+  margin-left: 3em;
+  margin-right: 3em;
+  display: block;
+}
+
+.description-text {
+  color: white;
+}
+
+.myArrow-container {
+  display: block;
+  width: 100%;
+  margin: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+myBtn:after {
+  background-color: #FFFFFF;
+}
+
+.myBtn span {
+  z-index: 1;
+  position: relative;
 }
 
 ul {
@@ -137,7 +180,7 @@ a {
 
 @media (min-width: 601px) {
   .person {
-    display: inline-block;
+    display: inline-table;
     border-radius: 10%;
 
     overflow: hidden;

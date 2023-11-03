@@ -141,7 +141,7 @@ img,
   position: relative;
   bottom: 0;
   right: 0;
-  height: 25px;
+  height: 35px;
   width: 100%;
   background: linear-gradient(to bottom, #292c2f, #a0a4a8);
   box-shadow: 0 0 100 100 #000;
@@ -162,7 +162,6 @@ img,
 }
 
 .arrow span {
-    display: block;
     width: 1.5vw;
     height: 1.5vw;
     border-bottom: 5px solid white;
@@ -171,16 +170,24 @@ img,
     margin: -10px;
 }
 
+.arrow span:nth-child(1) {
+    display: block;
+}
+
+.arrow span:nth-child(2) {
+    display: none;
+}
+
+.show-more-div:hover .arrow span:nth-child(2) {
+    display: block;
+}
+
 .show-more-div:hover .arrow span {
     animation: animate 3s infinite;
 }
 
 .show-more-div:hover .arrow span:nth-child(2) {
     animation-delay: -0.2s;
-}
-
-.show-more-div .arrow:hover span:nth-child(3) {
-    animation-delay: -0.4s;
 }
 
 @keyframes animate {

@@ -1,4 +1,5 @@
 .person {
+  position: relative;
   margin-top: 2%;
   background-color: #292c2f;
 }
@@ -17,6 +18,7 @@ img,
 
 .contact-image-name {
   display: flex;
+  margin-bottom: 4%;
 }
 
 .image-and-name {
@@ -94,6 +96,10 @@ img,
   height: 40px;
 }
 
+.more {
+  display: none;
+}
+
 .skills {
   display: block;
   width: 90%;
@@ -121,10 +127,6 @@ img,
   border-radius: 50%;
 }
 
-.more {
-  display: none;
-}
-
 .description-container {
   margin-left: 3em;
   margin-right: 3em;
@@ -135,38 +137,66 @@ img,
   color: white;
 }
 
-.myArrow-container {
-  display: block;
+.show-more-div {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  height: 25px;
   width: 100%;
-  margin: 1em;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(to bottom, #292c2f, #a0a4a8);
+  box-shadow: 0 0 100 100 #000;
+}
+
+.show-more-div:hover {
+  background: linear-gradient(to bottom, #292c2f, #cdd1d5);
+  cursor: pointer;
 }
 
 .arrow {
-  box-sizing: border-box;
-  height: 5vw;
-  width: 5vw;
-  border-style: solid;
-  border-color: white;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    cursor: pointer;
 }
 
-.arrow:hover {
-  border-bottom-width: 4px;
-  border-right-width: 4px;
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
 }
 
-myBtn:after {
-  background-color: #FFFFFF;
+.show-more-div:hover .arrow span {
+    animation: animate 3s infinite;
 }
 
-.myBtn span {
-  z-index: 1;
-  position: relative;
+.show-more-div:hover .arrow span:nth-child(2) {
+    animation-delay: -0.2s;
 }
+
+.show-more-div .arrow:hover span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 
 ul {
   list-style-type: none;

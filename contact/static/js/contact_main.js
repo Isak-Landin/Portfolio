@@ -1,15 +1,15 @@
 function showMore(btn) {
   const personComponent = btn.closest('.person');
-  const skillsContainer = personComponent.querySelector('.skills');
-  const moreText = personComponent.querySelector('.more');
+  const arrow = personComponent.querySelector('.show-more-div');
+  const more = personComponent.querySelector('.more');
 
-  if (skillsContainer.style.display === "block") {
-    btn.innerHTML = "Read more";
-    skillsContainer.style.display = "none";
-    moreText.style.display = "none";
+  const isClosed = more.style.display == "none";
+
+  if(isClosed){
+    arrow.style.display = "rotate(-135deg)";
+    more.style.display = "block";
   } else {
-    btn.innerHTML = "Read less";
-    skillsContainer.style.display = "block";
-    moreText.style.display = "inline";
+    arrow.style.display = "rotate(45deg)";
+    more.style.display = "none";
   }
 }

@@ -1,60 +1,62 @@
 <div class="person">
-
-  <div class="name-stack">
-        <h2 class="name">Isak Landin</h2>
-  </div>
-
-  <div class="contact-image-name">
-    <div class="image-and-name">
-      <div class="image-stack">
-        <img src="{{ url_for('contact.static', filename='person.jpg') }}" alt="Person's Image">
-      </div>
+  <div class="content-wrapper">
+    <div class="name-stack">
+          <h2 class="name">Isak Landin</h2>
     </div>
 
-    <div class="contact">
-      <div class="list-container">
-
-        <ul>
-          <li class="contact-li-header">
-            <h3 class="contact-li-h3">Phone:</h3>
-            <p class="contact-li-p">+46735376149</p>
-          </li>
-          <li class="contact-li-header">
-            <h3 class="contact-li-h3">Email:</h3>
-            <p class="contact-li-p">utbisalan@gmail.com</p>
-          </li>
-        </ul>
-
-        <div class="contact-image-header">
-          <a target="_blank" href="https://www.linkedin.com/in/isak-landin-375625153/">
-            <img class="contact-li-linkedin" src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Link">
-          </a>
-          <a target="_blank" href="https://github.com/Isak-Landin">
-            <img class="contact-li-github" src="{{ url_for('static', filename='github.png') }}" alt="Github Link">
-          </a>
+    <div class="contact-image-name">
+      <div class="image-and-name">
+        <div class="image-stack">
+          <img src="{{ url_for('contact.static', filename='person.jpg') }}" alt="Person's Image">
         </div>
+      </div>
 
+      <div class="contact">
+        <div class="list-container">
+
+          <ul>
+            <li class="contact-li-header">
+              <h3 class="contact-li-h3">Phone:</h3>
+              <p class="contact-li-p">+46735376149</p>
+            </li>
+            <li class="contact-li-header">
+              <h3 class="contact-li-h3">Email:</h3>
+              <p class="contact-li-p">utbisalan@gmail.com</p>
+            </li>
+          </ul>
+
+          <div class="contact-image-header">
+            <a target="_blank" href="https://www.linkedin.com/in/isak-landin-375625153/">
+              <img class="contact-li-linkedin" src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Link">
+            </a>
+            <a target="_blank" href="https://github.com/Isak-Landin">
+              <img class="contact-li-github" src="{{ url_for('static', filename='github.png') }}" alt="Github Link">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="more">
+      <div class="skills">
+        {% include "skill.html" %}
+        {% include "skill.html" %}
+        {% include "skill.html" %}
+      </div>
+
+      <div class="description-container">
+        <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+
+            risque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+
+        </p>
       </div>
     </div>
   </div>
 
-
-  <div class="more">
-    <div class="skills">
-      {% include "skill.html" %}
-      {% include "skill.html" %}
-      {% include "skill.html" %}
-    </div>
-
-    <div class="description-container">
-      <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
-
-          risque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
-
-      </p>
-    </div>
-  </div>
-  <div class="show-more-div">
+  <div class="show-more-down" onclick="showMore(this)">
     <div class="arrow">
         <span></span>
         <span></span>
